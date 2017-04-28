@@ -17,6 +17,7 @@ highDpiSupport: true     // High resolution support
 };
 var target = document.getElementById('gauge1'); // your canvas element
 var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+gauge.setTextField(document.getElementById("indicator1")); //SET TEXT FIELD IN THE ELEMENT
 gauge.maxValue = 100; // set max gauge value
 gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 gauge.animationSpeed = 50; // set animation speed (32 is default value)
@@ -43,6 +44,7 @@ highDpiSupport: true     // High resolution support
 };
 var target = document.getElementById('gauge2'); // your canvas element
 var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+gauge.setTextField(document.getElementById("indicator2")); //SET TEXT FIELD IN THE ELEMENT
 gauge.maxValue = 100; // set max gauge value
 gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 gauge.animationSpeed = 50; // set animation speed (32 is default value)
@@ -69,6 +71,7 @@ highDpiSupport: true     // High resolution support
 };
 var target = document.getElementById('gauge3'); // your canvas element
 var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+gauge.setTextField(document.getElementById("indicator3")); //SET TEXT FIELD IN THE ELEMENT
 gauge.maxValue = 100; // set max gauge value
 gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 gauge.animationSpeed = 50; // set animation speed (32 is default value)
@@ -95,6 +98,7 @@ highDpiSupport: true     // High resolution support
 };
 var target = document.getElementById('gauge4'); // your canvas element
 var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+gauge.setTextField(document.getElementById("indicator4")); //SET TEXT FIELD IN THE ELEMENT
 gauge.maxValue = 100; // set max gauge value
 gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 gauge.animationSpeed = 50; // set animation speed (32 is default value)

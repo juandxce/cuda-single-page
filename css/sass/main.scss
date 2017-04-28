@@ -219,10 +219,17 @@ body{
       text-transform: uppercase;
     }
   }
-  #indicator1{
+  .indicator{
     position: absolute;
-    left: 100px;
-    top: 90px;
+    left: 95px;
+    top: 95px;
+    font-size: 50px;
+    font-weight: normal;
+  }
+  .percent{
+    position: absolute;
+    left: 155px;
+    top: 95px;
     font-size: 50px;
     font-weight: normal;
   }

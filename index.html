@@ -11,21 +11,29 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--css reset-->
   <link rel="stylesheet" href="css/reset.css">
+  <!-- scrilling-nav css -->
+  <link rel="stylesheet" href="css/scrolling-nav.css">
+  <!--  custom stylesheet -->
   <link rel="stylesheet" href="css/main.css">
+
+<script src="http://imakewebthings.github.com/jquery-waypoints/waypoints.min.js" type="text/javascript"></script>
+
+
+
 </head>
 <body>
   <section id="work-with-us">
     <div class="container">
       <nav id="navigation" role="custom-dropdown">
-        <a href=""><img src="images/logo.png" alt="logo"></a>
+        <a href="#work-with-us"><img src="images/logo.png" alt="logo"></a>
         <input type="checkbox" id="toggle">
         <label for="toggle" onclick></label>
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">WORK</a></li>
-          <li><a href="">BLOG</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="#work-with-us" class="page-scroll">HOME</a></li>
+          <li><a href="#our-team" class="page-scroll">ABOUT</a></li>
+          <li><a href="#portfolio" class="page-scroll">WORK</a></li>
+          <li><a href="#testimonials" class="page-scroll">BLOG</a></li>
+          <li><a href="#contact" class="page-scroll">CONTACT</a></li>
         </ul>
       </nav>
       <header>
@@ -129,22 +137,26 @@
         <figure>
           <canvas width="230px" height="230px" id="gauge1"></canvas>
           <span class="sub-titles">Web Design</span>
-          <span id="indicator1">12%</span>
+          <span id="indicator1" class="indicator"></span>
+          <span class="percent">%</span>
         </figure>
         <figure>
           <canvas width="230px" height="230px" id="gauge2"></canvas>
           <span class="sub-titles">HTML / CSS</span>
-          <span id="indicator1">13%</span>
+          <span id="indicator2" class="indicator"></span>
+          <span class="percent">%</span>
         </figure>
         <figure>
           <canvas width="230px" height="230px" id="gauge3"></canvas>
           <span class="sub-titles">GRAPHIC DESIGN</span>
-          <span id="indicator1">14%</span>
+          <span id="indicator3" class="indicator"></span>
+          <span class="percent">%</span>
         </figure>
         <figure>
           <canvas width="230px" height="230px" id="gauge4"></canvas>
           <span class="sub-titles">UI / UX</span>
-          <span id="indicator1">15%</span>
+          <span id="indicator4" class="indicator"></span>
+          <span class="percent">%</span>
         </figure>
       </div>
     </div>
@@ -242,18 +254,34 @@
   <footer id="footer"><!--footer inside the last section -->
     <div class="container">
       <ul>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Google+</a></li>
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">Behance</a></li>
-        <li><a href="">Dribble</a></li>
-        <li><a href="">Github</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://plus.google.com">Google+</a></li>
+        <li><a href="https://linkedin.com">LinkedIn</a></li>
+        <li><a href="https://www.behance.net/">Behance</a></li>
+        <li><a href="https://dribbble.com/">Dribble</a></li>
+        <li><a href="https://github.com/">Github</a></li>
       </ul>
     </div>
   </footer><!--end footer-->
+  <!-- jQuery -->
+  <script src="js/jquery.js" charset="utf-8"></script>
   <!--gauge script-->
   <script src="js/gauge.min.js" charset="utf-8"></script>
+  <!--Custom gauge functionality -->
   <script src="js/gauges.js" charset="utf-8"></script>
+  <!-- Scroll reveal -->
+  <script src="js/scrollreveal.min.js" charset="utf-8"></script>
+  <!-- scroll easing -->
+  <script src="js/jquery.easing.min.js" charset="utf-8"></script>
+  <script src="js/scrolling-nav.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    window.sr = ScrollReveal();
+    sr.reveal('#skills .flexcontainer figure',{
+      duration: 1000,
+      origin: 'bottom',
+      viewFactor: 0.2
+    });
+  </script>
 </body>
 </html>

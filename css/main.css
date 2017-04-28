@@ -263,10 +263,16 @@ body {
       padding-top: 40px;
       padding-bottom: 15px;
       text-transform: uppercase; }
-  #skills #indicator1 {
+  #skills .indicator {
     position: absolute;
-    left: 100px;
-    top: 90px;
+    left: 95px;
+    top: 95px;
+    font-size: 50px;
+    font-weight: normal; }
+  #skills .percent {
+    position: absolute;
+    left: 155px;
+    top: 95px;
     font-size: 50px;
     font-weight: normal; }
 
